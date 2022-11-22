@@ -1,0 +1,33 @@
+// Site
+$white: #ffffff;
+$red: #bf0000;
+$blue: #00afd8;
+$light-blue: #cbf3fc;
+$black: #3c3c3b;
+$light-grey: #f1f1f1;
+$purple: #99007e;
+$home-blue: #006599;
+$home-green: #489900;
+$dark-red: #980000;
+$dark-grey: #4f4f47;
+
+$black_70: rgba(0, 0, 0, 0.7);
+$black_90: rgba(0, 0, 0, 0.9);
+$white_70: rgba(255, 255, 255, 0.7);
+
+.light-grey-bk {
+    background-color: $light-grey;
+}
+.black-bk {
+    background-color: $black;
+}
+
+.light-blue-bk {
+    background-color: $light-blue;
+}
+.red-text {
+    color: $red;
+}
+
+
+

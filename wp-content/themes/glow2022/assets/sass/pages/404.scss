@@ -1,0 +1,10 @@
+.error404 {
+  main {
+    padding-bottom: calc($padding-base * 4);
+
+    .lead {
+      padding-top: calc($padding-base * 2);
+      padding-bottom: calc($padding-base * 2);
+    }
+  }
+}

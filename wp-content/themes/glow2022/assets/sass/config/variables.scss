@@ -1,0 +1,24 @@
+// Font Awesome fonts path
+//$fa-font-path: './fonts/fontawesome/';
+
+$max-site-width: 1170px;
+// Box model
+$padding-base: 16px;
+$margin-base: 16px;
+
+// Borders
+$border-light: 1px;
+$border-regular: 2px;
+$border-heavy: 4px;
+$border-xheavy: 8px;
+
+// Effects
+$transition: all 200ms;
+
+// Image Sizes
+$thumbnail-sml: 50px;
+
+//Border Radius
+$border-radius-base: 4px;
+$border-radius-small: calc($border-radius-base / 2);
+$border-radius-big: calc($border-radius-base * 2);

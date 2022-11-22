@@ -1,0 +1,46 @@
+/*!
+Theme Name: Glow 2022
+Theme URI: https://glowmedia.co.uk
+Author: Steve Crofts.
+Author URI: https://glowmedia.co.uk
+Description: A custom Wordpress theme for Green Pet
+Version: 1.6
+Text Domain: Green Pet
+*/
+
+// Import the rest
+@import "reset/reset";
+
+// Import the variables
+@import "config/variables";
+
+// Import Font Awesome
+//@import "../node_modules/font-awesome/scss/font-awesome";
+
+// Theme
+@import "theme/colours";
+@import "theme/type";
+@import "theme/nav";
+@import "theme/layout";
+@import "theme/buttons";
+@import "theme/img";
+@import "theme/home-banner";
+@import "theme/post-items";
+@import "theme/yoast-faq";
+@import "theme/comment-form";
+@import "theme/courses";
+@import "theme/gforms";
+@import "theme/search";
+
+// Components
+//@import "components/*";
+
+
+// Pages and Sections
+@import "pages/404";
+@import "pages/home";
+//@import "sections/*";
+
+
+// Print styles
+@import "print/print";

@@ -1,0 +1,158 @@
+.post_item {
+    padding-bottom: $padding-base;
+    margin-bottom: $margin-base;
+    border-bottom: 1px solid $light-grey;
+
+    strong {
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: calc($margin-base /2);
+    }
+}
+
+.pagination {
+    flex-basis: 100%;
+    min-width: 100%;
+    display: block;
+
+    .page-numbers {
+        background: $light-grey;
+        color: $black;
+        padding: calc($padding-base / 2);
+        margin-right: calc($margin-base / 4);
+
+        &.current {
+            background: $red;
+            color: $white;
+
+            &:hover {
+                background: $red;
+                color: $white;
+            }
+        }
+
+        &:hover {
+            background: $red;
+            color: $white;
+        }
+
+        &.next, &.prev {
+            text-decoration: none;
+        }
+    }
+
+    
+}
+
+.blog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .post_item {
+    width: 45%;
+    margin-bottom: $margin-base * 2;
+
+    @media (max-width:600px) {
+      width: 100%;
+    }
+
+    h3 a{
+      text-decoration: none;
+      font-size: 26px;
+    }
+
+    .blog-image {
+      margin-bottom: $margin-base;
+      display: block;
+    }
+
+    .blog-button {
+      background: $red;
+      color: $white;
+      border-radius: 0;
+      text-decoration: none;
+      padding: calc($padding-base / 2);
+      display: inline-block;
+
+      &:hover {
+        background: $light-grey;
+        color: $black;
+      }
+    }
+  }
+
+}
+
+.testimonial-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .testimonial_item {
+        width: 45%;
+        margin-bottom: $margin-base * 2;
+
+        @media (max-width:600px) {
+          width: 100%;
+        }
+
+        blockquote {
+            quotes: "“" "”" "‘" "’";
+            position: relative;
+            hanging-punctuation: first;
+            padding-left: 20px;
+        
+            p {
+              
+        
+              &::before {
+                content: open-quote;
+                font-size: 4rem;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                  left: -.1em;
+                  top: 0.2em;
+                  color: $red;
+        
+              }
+        
+              &::after {
+                content: close-quote;
+                font-size: 4rem;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                bottom: -0.2em;
+                padding-left: 8px;
+                color: $red;
+              }
+            }
+          }
+        
+          figcaption {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        
+            .citation-text {
+              text-align: right;
+              margin-right: calc($margin-base / 2);
+        
+              strong {
+                font-weight: 600;
+                margin-bottom: $margin-base - 10;
+                display: block;
+              }
+            }
+        
+            .citation-img {
+              img {
+                border-radius: 50%;
+                width: 80px;
+                border: 2px solid $white;
+              }
+            }
+          }
+
+    }
+}

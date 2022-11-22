@@ -1,0 +1,57 @@
+.btn-full {
+    font-family: $button-stack;
+    display:inline-block;
+    background: $red;
+    color: $white;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: calc( calc($padding-base / 2) );
+    text-decoration: none;
+    border: 1px solid $red;
+
+    &:hover {
+
+        background: $light-grey;
+        color: $red;
+        border: 1px solid $red;
+
+    }
+}
+
+.btn-grey {
+    background: $dark-grey;
+    border: 1px solid $dark-grey;
+
+    &:hover {
+
+        background: $light-grey;
+        color: $black;
+        border: 1px solid $dark-grey;
+
+    }
+}
+
+.btn-outline {
+    font-family: $button-stack;
+    display:inline-block;
+    background: $light-grey;
+    color: $red;
+    border: 1px solid $red;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: calc( calc($padding-base / 2) );
+    text-decoration: none;
+
+    &:hover {
+
+        background: $red;
+        color: $white;
+        border: 1px solid $red;
+        
+
+    }
+}
+
+.btn-right {
+    float: right;
+}

@@ -1,0 +1,21 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  &.alignright {
+    float: right;
+    margin-left: $margin-base;
+    margin-bottom: $margin-base;
+  }
+
+  &.alignleft {
+    float: left;
+    margin-right: $margin-base;
+    margin-bottom: $margin-base;
+  }
+
+  &.aligncenter {
+    margin: 0 auto $margin-base;
+  }
+}

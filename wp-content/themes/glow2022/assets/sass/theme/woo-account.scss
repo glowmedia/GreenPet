@@ -1,0 +1,20 @@
+.woocommerce-MyAccount-navigation {
+
+    ul {
+        li {
+            display: block;
+            text-align: left;
+            calc($margin-base /2);
+        }
+    }
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    line-height: normal;
+    font-size: 16px;
+    height: 40px;
+}

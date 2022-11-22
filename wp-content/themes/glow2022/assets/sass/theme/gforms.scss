@@ -1,0 +1,54 @@
+.gform_wrapper {
+    .gfield {
+        margin-bottom: $margin-base;
+    }
+    .gfield_label {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+
+    .gfield_required {
+        color: $red;
+        display: inline-block;
+        font-size: 13px;
+        padding-left: 0.125em;
+    }
+
+    .validation_message {
+        color: $red;
+    }
+
+    input.large {
+        width: 100%;
+        border: 1px solid $black_70;
+        font-size: 16px;
+        padding: calc($padding-base / 2);
+    }
+
+    input[type=checkbox] {
+        display: inline-block;
+        -webkit-appearance: checkbox;
+    }
+
+    input[type=submit] {
+        font-family: "noto_sanssemicondensed_black", Arial, sans-serif, -apple-system, system-ui, BlinkMacSystemFont;
+        display: inline-block;
+        background: #bf0000;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 8px;
+        text-decoration: none;
+        border: 1px solid #bf0000;
+
+        &:hover {
+            background: #f1f1f1;
+            color: #bf0000;
+            border: 1px solid #bf0000;
+            cursor: pointer;
+          }
+    }
+}

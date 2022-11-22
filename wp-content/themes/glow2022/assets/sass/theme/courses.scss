@@ -1,0 +1,148 @@
+.home-courses {
+    display: flex;
+    justify-content: space-between;
+    grid-area: content;
+    flex-wrap: wrap;
+      
+
+    .course {
+        margin: 0;
+        width: 32%;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        background: $red;
+        padding: $padding-base;
+        margin-bottom: $margin-base;
+
+        @media (max-width:425px) {
+        
+            width: 100%;
+            
+        }
+       
+
+        h2 {
+            color: $white;
+        }
+
+        p { 
+
+            &:last-child {
+                margin-top: auto;
+                display: block;
+            }
+        
+        }
+
+        a.btn-full {
+            border: 1px solid $white;
+        }
+       
+    }
+}
+
+.sidebar-blog .home-courses {
+
+    display: flex;
+    flex-direction: column;
+
+    .course {
+        width: 100%;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+
+.course-table {
+
+    .wp-block-column {
+
+        display: flex;
+        flex-direction: column;
+        background: $light-grey;
+        padding: $padding-base;
+        border-radius: 0;
+        margin-bottom: $margin-base;
+        background-image: url('img/magnet-white.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: left -30% bottom 50%;
+
+        p { 
+            
+
+            &:last-child {
+                margin-top: auto;
+                display: block;
+            }
+        
+        
+        }
+
+        a.btn-full {
+            border: 1px solid $white;
+        }
+
+        
+        
+    }
+}
+
+.course-header {
+    background-color: $light-grey;
+    background-image: url('img/magnet-white-left.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right 20% bottom 50%;
+
+    
+
+   
+}
+
+@media (max-width:850px) {
+
+  
+
+
+    .course-header {
+        padding: $padding-base;
+        background-size: 90%;
+        background-position: right 10% bottom 10%;
+
+        .btn-full {
+
+            margin-bottom: $margin-base;
+
+        }
+    }
+  }
+
+.course-footer {
+    background-color: $light-grey;
+    padding: $padding-base;
+}
+
+.home .course-table {
+
+    .wp-block-column {
+
+        background: $red;
+        color: $white;
+
+        h2 {
+            color: $white;
+        }
+
+    }
+    
+
+}

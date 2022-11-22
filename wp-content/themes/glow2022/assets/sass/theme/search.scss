@@ -1,0 +1,21 @@
+.wp-block-search {
+
+    button {
+        background: $red;
+        color: $white;
+        border: none;
+    }
+}
+
+.single-search-result {
+    a {
+        text-decoration: none;
+        h3 {
+            color: $red;
+            
+        }
+    }
+
+    border-bottom: 1px dashed $light-grey;
+    margin-bottom: $margin-base;
+}

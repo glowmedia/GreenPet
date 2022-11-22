@@ -1,0 +1,23 @@
+{
+  "name": "sccl/nhs-supplychain",
+  "description": "Custom theme for SCCL",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Steve Crofts",
+      "email": "steven.crofts@supplychain.nhs.uk"
+    }
+  ],
+  
+  "require": {
+    "php": ">=7.0",
+    "symfony/var-dumper": "3.3.9",
+    "nesbot/carbon": "1.22.1",
+    "symfony/dotenv": "3.3.9",
+    "guzzlehttp/guzzle": "6.3.0",
+    "dompdf/dompdf": "0.8.1"
+  },
+  "autoload": {
+    "classmap": ["core/"]
+  }
+}
