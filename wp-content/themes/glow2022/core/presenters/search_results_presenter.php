@@ -4,7 +4,7 @@ function show_search_results_message($wp_query)
 {
     $count = $wp_query->found_posts;
     if ($count >= 0)
-        return 'Your search returned: <strong>' . $count . ' Blogs.</strong>';
+        return 'Your search returned: <strong>' . $count . ' items.</strong>';
         if ($count > 51)
             return 'Your search term returned a lot of results. For more meaningful results please try to narrow your query further.';
 
