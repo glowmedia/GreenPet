@@ -5,5 +5,5 @@
            title="<?php echo esc_attr_x('Search', 'label'); ?>"
            required
     >
-    <button type="submit" class="search-submit"><span class='fa fa-search' aria-hidden='true'></span></button>
+    <button type="submit" class="search-submit"><img src="<?php bloginfo('template_url'); ?>/img/icon_search.svg" alt="search site" width="30" height="30" /></button>
 </form>
