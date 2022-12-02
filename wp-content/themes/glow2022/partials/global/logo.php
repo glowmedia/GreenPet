@@ -1,3 +1,3 @@
 <div class="main-logo">
-    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/CFR-logo-col.svg" alt="Copywriting For Recruiters" width="320" height="68" /></a>
+    <a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/GP-Logo.svg" alt="Green Pet" width="260" height="72" /></a>
 </div>

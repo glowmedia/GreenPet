@@ -1,5 +1,8 @@
 // Site
 $white: #ffffff;
+$green: #54BA4C;
+$light-green: #6BC5B3;
+$dark-green: #2C7845;
 $red: #bf0000;
 $blue: #00afd8;
 $light-blue: #cbf3fc;
@@ -15,6 +18,9 @@ $black_70: rgba(0, 0, 0, 0.7);
 $black_90: rgba(0, 0, 0, 0.9);
 $white_70: rgba(255, 255, 255, 0.7);
 
+$dark-green-70: rgba(44, 120, 69, 0.6);
+$dark-green-20: rgba(44, 120, 69, 0.2);
+
 .light-grey-bk {
     background-color: $light-grey;
 }
@@ -27,6 +33,13 @@ $white_70: rgba(255, 255, 255, 0.7);
 }
 .red-text {
     color: $red;
+}
+.light-green-bk {
+    background-color: $dark-green-20;
+}
+
+.dark-green-bk {
+    background-color: $dark-green;
 }
 
 

@@ -36,8 +36,8 @@ nav{
 .footer-nav-list {
 
   li {
-    display: inline-block;
-    
+
+    padding-bottom: calc($padding-base / 2);
 
     &:last-child a{
       border: none;
@@ -47,8 +47,7 @@ nav{
       color: $black;
       text-decoration: none;
       font-size: 14px;
-      border-right: 1px solid $black;
-      padding-right: calc($padding-base - 10px);
+
 
     a:hover {
       color: $red;

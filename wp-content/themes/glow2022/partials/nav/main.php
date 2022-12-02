@@ -1,6 +1,6 @@
-<!--nav -->
+<nav>
  
-    <?php /*
+    <?php 
     wp_nav_menu([
             'menu' => 'main',
             'theme_location' => 'main',
@@ -24,9 +24,9 @@
         'fallback_cb'    => 'link_to_menu_editor',
     ]
 );
-*/
+
     ?>
-<!--
+
     <div class="mobile-menu-icon">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -34,15 +34,4 @@
     </div>
 
 </nav>
--->
-  
 
-
-
-<div class="top-menu">
-
-<a href="/courses/" class="btn-full">Book Now</a>
-<a href="#" class="main-menu-btn btn-outline">Menu</a>
-
-
-</div>

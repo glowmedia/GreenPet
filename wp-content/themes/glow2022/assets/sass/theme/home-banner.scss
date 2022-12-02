@@ -1,87 +1,58 @@
 .home-banner {
-    grid-area: content;
+    /*grid-area: content;
     grid-column: 2/4;
-    /*display: grid;
+    display: grid;
     grid-template-columns: 100%;
     grid-template-areas: "banner-text";
     min-height: 150px;*/
+    
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
 
-  
-
-  .slide-wrapper{
-    /*display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "banner-text";
-*/
-    &.show-slide{
-        display: grid;
-    }
-
-    &.hide-slide{
-        display: none;
-    }
-
-  }
+    min-height: 520px;
     
 
   .banner-text {
-      grid-area: banner-text;
-      color: $black;
+      grid-area: content;
+      color: $white;
       margin: 0 $margin-base;
       align-self: center;
+      width: 80%;
 
-      p {
-          font-size: 8vw;
-          line-height: normal;
-            margin: 0;
+      background-color: $dark-green-70;
+      padding: $padding-base;
+      position: absolute;
+      top: 50%;
 
-          strong {
-              font-size: 15vw;
-              font-weight: 800;
-          }
+      h1 {
+        color: $white;
+        margin-bottom: 0;
       }
+
+      h2 {
+        color: $white;
+        margin-top: 0;
+      }
+
+     
   }
 }
 
-@media (min-width:769px) {
+@media (max-width:768px) {
     .home-banner {
-        grid-area: sitecontent;
-        grid-column: 2/4;
+        /*grid-area: sitecontent;
+        grid-column: 2/4;*/
         
-        min-height: 370px;
+        min-height: 100vh;
 
-        .slide-wrapper{
-            /*display: grid;
-            grid-template-columns: auto 370px;
-            grid-template-areas: "banner-text banner-image";
-            */
-
-            img {
-                display: block;
-                align-self: center;
-                grid-area: banner-image;
-            }
-
-            .banner-text {
-                grid-area: banner-text;
-                color: $black;
-                margin-left: $margin-base;
-                align-self: center;
-          
-                p {
-                    font-size: 55px;
-                    line-height: normal;
-                      margin: 0;
-          
-                    strong {
-                        font-size: 85px;
-                        font-weight: 800;
-                    }
-                }
-            }
+        .banner-text {
+            width: 90%;
+            top: 10%;
         }
-    
-      
       
     }
+
+    
 }

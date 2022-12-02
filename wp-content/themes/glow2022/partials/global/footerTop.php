@@ -1,7 +1,24 @@
-<div class="footer-signup">
-        <p>Sign up for our newsletter &nbsp;&nbsp;<a href="/newsletter-sign-up/" class="btn-full">SIGN UP</a></p>
+<div class="footer-col1">
+        <h3>Quick Links</h3>
+        <?php get_template_part('partials/nav/footer'); ?>
 </div>
-<div class="footer-social">
-        <a href="https://www.linkedin.com/company/42747870/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icon-linkedin.svg" alt="Copywriting For Recruiters on Linkedin" width="38" height="38" /></a>
-        <a href="https://www.youtube.com/channel/UCdOS5sM3AG_9No7MtfY2tZA" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icon-tube.svg" alt="Copywriting For Recruiters on YouTube" width="38" height="38" /></a>
+<div class="footer-col2">
+        <h3>Need Help?</h3>
+        <?php
+                wp_nav_menu([
+                        'menu' => 'footer',
+                        'theme_location' => 'footer_contact_us',
+                        'depth' => 1,
+                        'container' => 'div',
+                        'container_class' => 'footer-menu2',
+                        'menu_class' => 'footer-nav-list',
+                        ]
+                );
+    ?>
+</div>
+<div class="footer-col3">
+<h3>Subscribe to our Newsletter</h3>
+			<p>We'll send you a sweet 15% discount coupon you can use on your fist order.</p>	
+			<p><a href="https://mailchi.mp/vitacanis/discount-coupon" target="_blank" class="btn btn-sign-up">GET MY 15% OFF</a></p>
+			<p><small>Valid for online purchases only. Does not apply to products already on offer.</small></p>
 </div>

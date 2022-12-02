@@ -1,4 +1,4 @@
-<div class="wrapper-sidebar">
+<div class="wrapper">
 <div class="page-content">
 
 

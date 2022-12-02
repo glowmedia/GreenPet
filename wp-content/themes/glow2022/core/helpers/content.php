@@ -44,6 +44,9 @@ function load_page_content($slug = null)
         get_template_part('/pages/home');
     else if (is_search())
         get_template_part('/pages/search-results');
+
+        else if (is_shop())
+        get_template_part('/pages/shop');
     //everything else
     else if (in_array($slug, $template_names))
         get_template_part('/pages/' . $slug);

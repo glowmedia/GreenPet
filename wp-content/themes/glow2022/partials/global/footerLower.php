@@ -1,6 +1,7 @@
 <div class="footer-menu">
-    <?php get_template_part('partials/nav/footer'); ?>
+<a href="https://www.linkedin.com/company/42747870/" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icon-fb.svg" alt="Copywriting For Recruiters on Linkedin" width="38" height="38" /></a>
+        <a href="https://www.youtube.com/channel/UCdOS5sM3AG_9No7MtfY2tZA" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/icon-twit.svg" alt="Copywriting For Recruiters on YouTube" width="38" height="38" /></a>
 </div>
 <div class="footer-copyright">
-        <p><span class="red-text">&copy; <?php echo date('Y'); ?></span> COPYWRITING FOR RECRUITERS</p>
+        <p><span class="red-text">&copy; <?php echo date('Y'); ?></span> Green Pet</p>
 </div>

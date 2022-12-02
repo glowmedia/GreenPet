@@ -20,18 +20,21 @@ header {
   padding: 0;
   width: 100%;
   min-height: 42px;
-  position: fixed;
+  
+}
+
+.home header {
   z-index: 1;
-  background-color: $white;
-  top: 0;
+  position: absolute;
+
+  @media (max-width:768px) {
+    position: relative;
+  }
 }
 
 main {
-  padding-top: 75px;
+  padding-top: $padding-base;
 
-  @media (max-width:768px) {
-    padding-top: 60px;
-  }
 }
 
 .admin-bar {
@@ -39,18 +42,15 @@ main {
     margin-top: 2em;
   }
 
-  main {
-    padding-top: 110px;
-  }
 }
 
 .wrapper {
-  width: 100%;
-  display: grid;
+  max-width: $max-site-width;
+  /*display: grid;
   grid-template-columns: auto $max-site-width  auto;
-  grid-template-areas: ". sitecontent .";
+  grid-template-areas: ". sitecontent .";*/
   padding: 0 $padding-base;
-  margin-bottom: $margin-base;
+  margin: 0 auto $margin-base;
 }
 
 .wrapper-sidebar {
@@ -150,12 +150,13 @@ main {
   max-width: $max-site-width;
   margin: 0 auto;
   padding: 0 $padding-base;
+  position: relative;
 }
 
 .wrapper-header {
   display: grid;
-  grid-template-areas: "mainlogo nav";
-  grid-template-columns: 320px auto;
+  grid-template-areas: "mainlogo nav icons";
+  grid-template-columns: 320px 2fr 100px;
   margin: calc($margin-base / 2) 0;
 
   .main-logo {
@@ -170,6 +171,17 @@ main {
 
     .btn-full, .btn-outline {
       font-size: 14px;
+    }
+  }
+
+  .icons {
+    grid-area: icons;
+    align-self: center;
+    justify-self: end;
+    display: flex;
+
+    .search-icon {
+      margin-right: $margin-base;
     }
   }
 
@@ -194,6 +206,26 @@ main {
     align-self: center;
     justify-self: end;
   }
+}
+
+.search-box {
+  z-index: 5;
+  margin-bottom: $margin-base;
+  width: 25%;
+  position: absolute;
+  right: 0;
+  background-color: $white-70;
+  display: none;
+
+  &.search-open {
+    display: block;
+  }
+}
+
+
+.search-form {
+  grid-area: content;
+  padding: $padding-base;
 }
 
 .page-content, .post-list, .page-title {
@@ -465,30 +497,31 @@ footer {
  
   background-color: $white;
   margin-top: $margin-base;
+  border-top: 2px solid $dark-green;
 
   .footer-top {
     display: grid;
-    grid-template-columns: auto minmax(auto, calc($max-site-width/2)) minmax(auto, calc($max-site-width/2)) auto;
-    grid-template-areas: ". footerSignup footerSocial .";
+    grid-template-columns: auto minmax(auto, calc($max-site-width/4)) minmax(auto, calc($max-site-width/4)) minmax(auto, calc($max-site-width/2)) auto;
+    grid-template-areas: ". footerCol1 footerCol2 footerCol3 .";
     padding: 20px;
 
     @media (max-width:630px) {
       grid-template-columns: auto minmax(auto, 1fr) auto;
-    grid-template-areas: ". footerSignup ."
-    ". footerSocial .";
+    grid-template-areas: ". footerCol1 ."
+    ". footerCol2 ."
+    ". footerCol3 .";
     }
 
-    .footer-signup {
-      grid-area: footerSignup;
+    .footer-col1 {
+      grid-area: footerCol1;
       padding: 0 $padding-base;
 
       p {
         margin: 0;
       }
     }
-    .footer-social {
-      grid-area: footerSocial;
-      justify-self: end;
+    .footer-col2 {
+      grid-area: footerCol2;
       padding: 0 $padding-base;
 
       @media (max-width:630px) {
@@ -506,7 +539,12 @@ footer {
         }
       }
 
+      
 
+
+    }
+    .footer-col3 {
+      grid-area: footerCol3;
     }
   }
 

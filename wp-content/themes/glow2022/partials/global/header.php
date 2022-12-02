@@ -28,6 +28,13 @@
         <div class="wrapper-header">
             <?php get_template_part('partials/global/logo'); ?>
             <?php get_template_part('partials/nav/main'); ?>
+            <?php get_template_part('partials/global/icons'); ?>
+        </div>
+
+        <div class="search-box">
+            <div class="search-form">
+            <?php get_template_part('partials/search/basic-searchform'); ?>
+            </div>
         </div>
     </div>
 

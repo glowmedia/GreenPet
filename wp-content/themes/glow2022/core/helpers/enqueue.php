@@ -27,9 +27,9 @@ add_action('admin_head', 'admin_scripts');
  * Load IE conditional scripts and styles
  * Add the action within conditional tags in the head.
  */
-function ie_scripts()
-{
+//function ie_scripts()
+//{
    // wp_enqueue_script('html-5-shiv', get_template_directory_uri() . '/components/html5shiv/dist/html5shiv.js');
     //wp_enqueue_script('respond', get_template_directory_uri() . '/components/respond/dest/respond.min.js');
     //wp_enqueue_style('ie-style', get_template_directory_uri() . '/assets/ie/ie.css');
-}
+//}
