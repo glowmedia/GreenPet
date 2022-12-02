@@ -12,8 +12,8 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0,0,0,0.2); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
 }
 
 header {
@@ -150,7 +150,7 @@ main {
   max-width: $max-site-width;
   margin: 0 auto;
   padding: 0 $padding-base;
-  position: relative;
+  /*position: relative;*/
 }
 
 .wrapper-header {
@@ -197,11 +197,16 @@ main {
     }
   }
 
-  @media (max-width:400px) {
+  @media (max-width:480px) {
 
     .main-logo {
       grid-area: mainlogo;
       width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -664,7 +669,7 @@ footer {
 
   .wrapper-header {
     align-items: center;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 4fr 2fr 76px;;
   }
 
   .wrapper {
