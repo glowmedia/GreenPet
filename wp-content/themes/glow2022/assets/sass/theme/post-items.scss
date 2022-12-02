@@ -22,17 +22,17 @@
         margin-right: calc($margin-base / 4);
 
         &.current {
-            background: $red;
+            background: $dark-green;
             color: $white;
 
             &:hover {
-                background: $red;
+                background: $dark-green;
                 color: $white;
             }
         }
 
         &:hover {
-            background: $red;
+            background: $dark-green;
             color: $white;
         }
 
@@ -68,7 +68,7 @@
     }
 
     .blog-button {
-      background: $red;
+      background: $dark-green;
       color: $white;
       border-radius: 0;
       text-decoration: none;
@@ -82,77 +82,4 @@
     }
   }
 
-}
-
-.testimonial-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    .testimonial_item {
-        width: 45%;
-        margin-bottom: $margin-base * 2;
-
-        @media (max-width:600px) {
-          width: 100%;
-        }
-
-        blockquote {
-            quotes: "“" "”" "‘" "’";
-            position: relative;
-            hanging-punctuation: first;
-            padding-left: 20px;
-        
-            p {
-              
-        
-              &::before {
-                content: open-quote;
-                font-size: 4rem;
-                font-family: Arial, Helvetica, sans-serif;
-                position: absolute;
-                  left: -.1em;
-                  top: 0.2em;
-                  color: $red;
-        
-              }
-        
-              &::after {
-                content: close-quote;
-                font-size: 4rem;
-                font-family: Arial, Helvetica, sans-serif;
-                position: absolute;
-                bottom: -0.2em;
-                padding-left: 8px;
-                color: $red;
-              }
-            }
-          }
-        
-          figcaption {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        
-            .citation-text {
-              text-align: right;
-              margin-right: calc($margin-base / 2);
-        
-              strong {
-                font-weight: 600;
-                margin-bottom: $margin-base - 10;
-                display: block;
-              }
-            }
-        
-            .citation-img {
-              img {
-                border-radius: 50%;
-                width: 80px;
-                border: 2px solid $white;
-              }
-            }
-          }
-
-    }
 }

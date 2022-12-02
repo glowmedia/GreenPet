@@ -1,19 +1,19 @@
 .btn-full {
     font-family: $button-stack;
     display:inline-block;
-    background: $red;
+    background: $dark-green;
     color: $white;
     font-size: 16px;
     text-transform: uppercase;
     padding: calc( calc($padding-base / 2) );
     text-decoration: none;
-    border: 1px solid $red;
+    border: 1px solid $dark-green;
 
     &:hover {
 
         background: $light-grey;
-        color: $red;
-        border: 1px solid $red;
+        color: $dark-green;
+        border: 1px solid $dark-green;
 
     }
 }
@@ -35,8 +35,8 @@
     font-family: $button-stack;
     display:inline-block;
     background: $light-grey;
-    color: $red;
-    border: 1px solid $red;
+    color: $dark-green;
+    border: 1px solid $dark-green;
     font-size: 16px;
     text-transform: uppercase;
     padding: calc( calc($padding-base / 2) );
@@ -44,9 +44,9 @@
 
     &:hover {
 
-        background: $red;
+        background: $dark-green;
         color: $white;
-        border: 1px solid $red;
+        border: 1px solid $dark-green;
         
 
     }

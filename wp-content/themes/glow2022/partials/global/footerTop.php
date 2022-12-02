@@ -19,6 +19,6 @@
 <div class="footer-col3">
 <h3>Subscribe to our Newsletter</h3>
 			<p>We'll send you a sweet 15% discount coupon you can use on your fist order.</p>	
-			<p><a href="https://mailchi.mp/vitacanis/discount-coupon" target="_blank" class="btn btn-sign-up">GET MY 15% OFF</a></p>
+			<p><a href="" target="_blank" class="btn btn-sign-up">GET MY 15% OFF</a></p>
 			<p><small>Valid for online purchases only. Does not apply to products already on offer.</small></p>
 </div>
