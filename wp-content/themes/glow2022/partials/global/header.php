@@ -24,7 +24,13 @@
 <body <?php body_class(); ?>>
 <div id="overlay"></div>
 <header>
+    <?php if (get_field('announcement_bar', 'options')) {
+        get_template_part('partials/global/announcement');
+    } ?>
+
     <div class="main-container">
+        
+        
         <div class="wrapper-header">
             <?php get_template_part('partials/global/logo'); ?>
             <?php get_template_part('partials/nav/main'); ?>

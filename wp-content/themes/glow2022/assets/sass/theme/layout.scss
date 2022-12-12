@@ -44,6 +44,26 @@ main {
 
 }
 
+.announcement {
+  background: $dark-green;
+  color: $white;
+  text-align: center;
+  padding: $padding-base;
+
+  p {
+    margin: 0;
+    font-size: 20px;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $light-green;
+      }
+    }
+  }
+}
+
 .wrapper {
   max-width: $max-site-width;
   /*display: grid;
