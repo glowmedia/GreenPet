@@ -6,6 +6,7 @@ nav{
     display: inline;
     margin-left: $margin-base;
     font-size: 1.1rem;
+    position: relative;
 
     a {
       color: $black;
@@ -23,6 +24,34 @@ nav{
       color: $dark-green;
     }
 
+    
+
+  }
+
+  
+
+  .sub-menu {
+    background: $dark-green;
+    display: none;
+    color: $white;
+    padding: $padding-base 0;
+    position: absolute;
+    left: 0;
+    width: 150px;
+
+    li {
+      display: block;
+      text-align: left;
+      margin-bottom: calc( $margin-base / 2);
+
+      a {
+        color: $white !important;
+      }
+    }
+  }
+
+  li.menu-item-has-children:hover .sub-menu {
+    display: block;
   }
 }
 

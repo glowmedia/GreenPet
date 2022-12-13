@@ -43,7 +43,7 @@ function woo_new_product_tab( $tabs ) {
 	
 	$tabs['faq_tab'] = array(
 		'title' 	=> __( 'FAQs', 'woocommerce' ),
-		'priority' 	=> 50,
+		'priority' 	=> 20,
 		'callback' 	=> 'woo_new_product_tab_content'
 	);
 
@@ -55,5 +55,11 @@ function woo_new_product_tab_content() {
 	echo '<h2>Frequently Asked Questions</h2>';
 	echo get_field('product_faqs');
 	
+}
+
+add_filter('woocommerce_sale_flash', 'woocommerce_custom_sale_text', 10, 3);
+function woocommerce_custom_sale_text($text, $post, $_product)
+{
+return '<span class="onsale">SPECIAL OFFER</span>';
 }
 
