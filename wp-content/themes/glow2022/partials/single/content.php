@@ -21,17 +21,9 @@
         endif;
     endif; ?>
 
+
 <?php comments_template(); ?>
 
-<div class="blog-nav">
-
-<?php next_post_link( '%link', '<strong>Next</strong>' ); ?>
-	
-<a href="/blogs/">All Blogs</a>
-
-<?php previous_post_link('%link', '<strong>Previous</strong>'); ?>
 </div>
 
-</div>
-<?php get_sidebar(); ?>
 </div>

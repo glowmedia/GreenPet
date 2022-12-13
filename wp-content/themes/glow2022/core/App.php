@@ -12,7 +12,8 @@ class App
     public function init()
     {
 
-        $this->autoload();
+        $this->autoload(); 
+        //add_action( 'after_setup_theme', array( $this, 'woo' ) );
 
         
     }
@@ -70,6 +71,16 @@ class App
 
         return $files;
     }
+
+    /*public function woo() {
+
+        add_theme_support(
+            'woocommerce'
+            
+        );
+
+        //return;
+    }*/
 
 
    

@@ -136,27 +136,7 @@ function paginated_cpt_list($post_type, $posts_per_page, $taxonomy = null, $rewr
 {
     global $post;
 
-    /*$category = get_query_var('category');
-
-    if ($category) {
-        $taxonomy = 'category_tower';
-        $terms = $category;
-    }
-
-    $publication_types = [
-        'brochures',
-        'case-studies',
-        'nhs-clinical-evaluation-reviews-reports',
-        'nhs-clinical-evaluation-team',
-        'clinical-criteria',
-        'leaflets',
-    ];
-
-    $publications = (in_array($post->post_name, $publication_types) || is_page('national-category-strategy-programme')) ? true : false;
-    $user_guides = ('user-guides' === $post->post_name) ? true : false;
     
-    $contracts = ('cpt_contract' == $post_type);
-    */
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $tax_query = [];
 

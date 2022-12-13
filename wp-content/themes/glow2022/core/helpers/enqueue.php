@@ -3,6 +3,8 @@
 /**
  * Load front end theme scripts and styles
  */
+
+
 function theme_scripts()
 {
     wp_enqueue_style('style', get_stylesheet_uri(), null, wp_get_theme()->Version);
@@ -33,3 +35,4 @@ add_action('admin_head', 'admin_scripts');
     //wp_enqueue_script('respond', get_template_directory_uri() . '/components/respond/dest/respond.min.js');
     //wp_enqueue_style('ie-style', get_template_directory_uri() . '/assets/ie/ie.css');
 //}
+
