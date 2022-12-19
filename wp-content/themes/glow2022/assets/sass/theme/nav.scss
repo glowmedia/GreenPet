@@ -50,6 +50,11 @@ nav{
 
       a {
         color: $white;
+
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -114,9 +119,9 @@ nav{
       display: block;
       width: 80%;
       height: 100vh;
-      position: absolute;
+      position: fixed;
       left: 0;
-      top: -10px;
+      top: 0;
       text-align: left;
       padding: 20px;
       background: #fff;
@@ -197,6 +202,10 @@ nav{
                   li {
                     a {
                       color: $dark-green;
+                      &:hover {
+                        text-decoration: underline;
+
+                      }
                     }
                   }
                 }
