@@ -18,7 +18,7 @@ if( $post_objects ): ?>
         <li class="product">
 			<a href="<?php the_permalink(); ?>">
 
-            <?php echo woocommerce_get_product_thumbnail( $post ); ?>
+            <?php echo woocommerce_get_product_thumbnail( 'woocommerce_thumbnail' ); ?>
 
             <div class="card-body">
             <p><?php the_title(); ?></p>
