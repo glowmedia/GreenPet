@@ -231,6 +231,22 @@ em {
   font-style: italic;
 }
 
+ul {
+  margin-left: calc($margin-base * 2);
+  li{
+  list-style-type: disc;
+  margin-bottom: calc( $margin-base - 4px );
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: calc($margin-base * 2);
+  li {
+    margin-bottom: calc( $margin-base - 4px );
+  }
+}
+
 a {
   color: $dark-green;
 
