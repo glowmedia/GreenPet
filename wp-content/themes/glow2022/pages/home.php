@@ -6,7 +6,7 @@
 </div>
 
 <div class="wrapper">
-<p>Site width - best sellers 3 in a row</p>
+<?php echo do_shortcode('[products limit="3" columns="3" best_selling="true" /]'); ?>
 </div>
 
 <div class="wrapper-full light-green-bk">
