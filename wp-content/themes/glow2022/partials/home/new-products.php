@@ -17,7 +17,9 @@ if( $post_objects ): ?>
         ?>
         <li class="product">
 			<a href="<?php the_permalink(); ?>">
-			<?php the_post_thumbnail( 'medium', ['class' => 'card-img-top']); ?>
+
+            <?php echo woocommerce_get_product_thumbnail( $post ); ?>
+
             <div class="card-body">
             <p><?php the_title(); ?></p>
             <p><?php echo $product->get_price_html(); ?></p>
