@@ -6,13 +6,14 @@
 </div>
 
 <div class="wrapper">
+    <h2>Best Sellers</h2>
 <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true" /]'); ?>
 </div>
 
 <div class="wrapper-full light-green-bk">
     <div class="page-content">
-        <p>Full width - New arrivals</p>
-</div>
+        <?php get_template_part('partials/home/new-products'); ?>
+    </div>
 
 </div>
 
