@@ -48,8 +48,9 @@ nav{
       text-align: left;
       margin-bottom: calc( $margin-base / 2);
 
-      a {
-        color: $white;
+      a, .current-page-ancestor a {
+        color: $white !important;
+
 
         &:hover {
           color: $white;
