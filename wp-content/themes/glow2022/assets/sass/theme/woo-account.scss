@@ -46,3 +46,8 @@ td.actions .coupon {
     }
 
 }
+
+.new-prods li:nth-child(3n) { 
+    /* Your styles here */
+    margin-right: 0;
+}

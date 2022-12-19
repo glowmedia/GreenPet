@@ -5,7 +5,7 @@
 if( $post_objects ): ?>
     <h2>New Products</h2>
     <div class="woocommerce columns-3">
-    <ul class="products columns-3">
+    <ul class="products columns-3 new-prods">
     <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
         <?php setup_postdata($post); ?>
 
