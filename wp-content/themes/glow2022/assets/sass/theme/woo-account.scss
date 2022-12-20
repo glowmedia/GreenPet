@@ -47,7 +47,29 @@ td.actions .coupon {
 
 }
 
+.home {
+    li.product {
+        text-align: center;
+
+        .star-rating {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+ul.new-prods {
+    text-align: center;
+
+    li.product {
+        vertical-align: top;
+        display: inline-block;
+        float: none !important;
+    }
+}
+
 .new-prods li:nth-child(3n) { 
     /* Your styles here */
-    margin-right: 0;
+    margin-right: 0 !important;
 }

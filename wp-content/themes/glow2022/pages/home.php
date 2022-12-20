@@ -6,7 +6,7 @@
 </div>
 
 <div class="wrapper">
-    <h2>Best Sellers</h2>
+    <h2 class="heading-center">Best Sellers</h2>
 <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true" /]'); ?>
 </div>
 

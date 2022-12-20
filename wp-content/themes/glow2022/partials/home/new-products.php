@@ -3,7 +3,7 @@
 	$post_objects = get_field('new_products', 'options');
 
 if( $post_objects ): ?>
-    <h2>New Products</h2>
+    <h2 class="heading-center">New Products</h2>
     <div class="woocommerce columns-3">
     <ul class="products columns-3 new-prods">
     <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>

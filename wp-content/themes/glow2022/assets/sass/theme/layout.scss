@@ -73,6 +73,12 @@ main {
   margin: 0 auto $margin-base;
 }
 
+.light-green-bk {
+  .page-content {
+    padding-top: $padding-base;
+  }
+}
+
 .wrapper-sidebar {
   width: 100%;
   display: grid;
