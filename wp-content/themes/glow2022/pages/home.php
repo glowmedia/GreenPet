@@ -18,7 +18,7 @@
 </div>
 
 <div class="wrapper">
-<p> site width - blog</p>
+<!-- Blog goes here -->
 </div>
 
 <div class="wrapper">
