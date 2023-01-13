@@ -107,4 +107,4 @@ function acf_field_ascend_ancestors($field, $post_id)
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'blog-small', 520, 300, true );
 add_image_size( 'blog-large', 420, 9999 );
-add_image_size( 'blog-home', 380, 180, true );
+add_image_size( 'blog-home', 380, 180 );
