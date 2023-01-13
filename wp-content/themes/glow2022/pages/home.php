@@ -6,8 +6,10 @@
 </div>
 
 <div class="wrapper">
+    <div class="page-content">
     <h2 class="heading-center">Best Sellers</h2>
-<?php echo do_shortcode('[products limit="3" columns="3" best_selling="true" /]'); ?>
+    <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true" /]'); ?>
+</div>
 </div>
 
 <div class="wrapper-full light-green-bk">

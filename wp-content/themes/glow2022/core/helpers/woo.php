@@ -13,11 +13,11 @@ add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
 
 function my_theme_wrapper_start() {
-    echo '<section class="wrapper">';
+    echo '<section class="wrapper"><div class="page-content">';
 }
 
 function my_theme_wrapper_end() {
-    echo '</section>';
+    echo '</div></section>';
 }
 
 remove_theme_support( 'wc-product-gallery-zoom' );
