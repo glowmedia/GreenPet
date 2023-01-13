@@ -18,7 +18,7 @@
 </div>
 
 <div class="wrapper">
-<!-- Blog goes here -->
+<?php get_template_part('partials/home/blog'); ?>
 </div>
 
 <div class="wrapper">

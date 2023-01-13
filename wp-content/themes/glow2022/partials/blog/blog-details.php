@@ -1,11 +1,6 @@
-<div class="wrapper-sidebar">
+<div class="wrapper-sidebar xxx">
     <div class="page-content">
 
-    <?php
-        if ( has_post_thumbnail() ) {     
-            the_post_thumbnail( 'full');
-        }
-    ?>
 
     </div>
 

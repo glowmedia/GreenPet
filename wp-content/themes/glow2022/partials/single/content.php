@@ -4,9 +4,11 @@
 
 
 <?php
+/*
         if ( has_post_thumbnail() ) {     
             the_post_thumbnail( 'full', array('class' => 'top-image'));
         }
+        */
 ?>
 
 <h1><?php the_title(); ?></h1>
