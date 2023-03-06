@@ -1,12 +1,10 @@
 <div class="wrapper-full home-banner" style="background-image: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 60%), url(<?php echo get_field('home_page_banner', 'options') ?>);">
 
-    <div class="banner-text">
-        <?php the_field('home_page_text', 'options'); ?>
-    </div>
 </div>
 
 <div class="wrapper">
     <div class="page-content">
+    <?php the_field('home_page_text', 'options'); ?>
     <h2 class="heading-center">Best Sellers</h2>
     <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true" /]'); ?>
 </div>
