@@ -12,6 +12,7 @@
     position: relative;
 
     min-height: 520px;
+    margin-bottom: 0;
     
 
   .banner-text {
@@ -45,7 +46,7 @@
         /*grid-area: sitecontent;
         grid-column: 2/4;*/
         
-        min-height: 100vh;
+        min-height: 200px;
 
         .banner-text {
             width: 90%;
@@ -55,4 +56,14 @@
     }
 
     
+}
+
+@media (max-width:425px) {
+  .home-banner {
+
+      min-height: 150px;
+    
+  }
+
+  
 }
